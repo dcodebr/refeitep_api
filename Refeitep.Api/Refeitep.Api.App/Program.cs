@@ -14,7 +14,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(opt =>
     {
         opt.SwaggerEndpoint("/swagger/v1/swagger.json", "TodoAPI V1");
-        opt.RoutePrefix = "";
+        opt.RoutePrefix = String.Empty;
     });
 }
 
