@@ -34,7 +34,7 @@ Por ser um projeto orientado a objetos, serão utilizados os seguintes padrões:
 
 O Diagrama de Classes da API foi desenvolvido pelo professor e orientador do projeto Alex Rocha. Também é possível acessar o diagrama através [deste link](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=refeitep_class_diagram&dark=auto#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1CFoNRN8hVCWrQ-hT2FW8-jXgPcbSlIEQ%26export%3Ddownload).
 
-![](./docs/class_diagram.jpg)
+![](class_diagram.jpg)
 
 ## Rotas da API
 
