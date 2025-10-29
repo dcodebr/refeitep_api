@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Refeitep.Api.App", "Refeite
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Refeitep.Api.Models", "Refeitep.Api.Models\Refeitep.Api.Models.csproj", "{EFDC5CFE-9EEA-4E1E-B633-261B9D37578D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Refeitep.Api.Service.Dispositivo", "Refeitep.Api.Service.Dispositivo\Refeitep.Api.Service.Dispositivo.csproj", "{AA8BDD8F-933D-4C4F-BE8F-33FEA9CA58C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{EFDC5CFE-9EEA-4E1E-B633-261B9D37578D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFDC5CFE-9EEA-4E1E-B633-261B9D37578D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFDC5CFE-9EEA-4E1E-B633-261B9D37578D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA8BDD8F-933D-4C4F-BE8F-33FEA9CA58C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA8BDD8F-933D-4C4F-BE8F-33FEA9CA58C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA8BDD8F-933D-4C4F-BE8F-33FEA9CA58C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA8BDD8F-933D-4C4F-BE8F-33FEA9CA58C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
