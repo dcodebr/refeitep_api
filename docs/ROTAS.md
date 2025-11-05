@@ -91,10 +91,10 @@ Rota responsável pela autenticação dos usuários do app.
 |Verbo|Rota|Descrição|
 |---|---|---|
 |`GET`|🔒`/produtos`|Retorna todos os produtos|
-|`GET`|🔒`/produtos/{id}`|Retorna um único cliente com base no {id}|
-|`POST`|🔒`/produtos`|Inclui um novo cliente|
-|`PUT`|🔒`/produtos/{id}`|Substitui as informações do cliente com base no {id}|
-|`DELETE`|🔒`/produtos/{id}`|Exclui um cliente com base no {id}|
+|`GET`|🔒`/produtos/{id}`|Retorna um único produto com base no {id}|
+|`POST`|🔒`/produtos`|Inclui um novo produto|
+|`PUT`|🔒`/produtos/{id}`|Substitui as informações do produto com base no {id}|
+|`DELETE`|🔒`/produtos/{id}`|Exclui um produto com base no {id}|
 
 ### DTO
 
