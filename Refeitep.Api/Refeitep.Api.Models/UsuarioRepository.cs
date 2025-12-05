@@ -1,54 +1,48 @@
+using Refeitep.Api.Data;
 using Refeitep.Api.Models;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace Refeitep.Api.Repositories
 {
-    public class ClienteRepository
+    public class UsuarioRepository
     {
-        private List<Cliente> _clientes = new();
+        private readonly RefeitepContext _context;
 
-        public List<Cliente> GetAll()
+        public UsuarioRepository(RefeitepContext context)
         {
-            return _clientes;
+            _context = context;
         }
 
-        public Cliente GetById(int id)
+        public List<Usuario> GetAll()
         {
-            foreach (var c in _clientes)
-                if (c.Id == id) return c;
-            return null;
+            return _context.Usuarios.ToList();
         }
 
-        public void Add(Cliente cliente)
+        public Usuario GetById(int id)
         {
-            _clientes.Add(cliente);
+            return _context.Usuarios.FirstOrDefault(x => x.Id == id);
         }
 
-        public void Update(Cliente cliente)
+        public void Add(Usuario usuario)
         {
-            for (int i = 0; i < _clientes.Count; i++)
-            {
-                if (_clientes[i].Id == cliente.Id)
-                {
-                    _clientes[i].UsuarioId = cliente.UsuarioId;
-                    _clientes[i].Usuario = cliente.Usuario;
-                    _clientes[i].Cpf = cliente.Cpf;
-                    _clientes[i].DataNascimento = cliente.DataNascimento;
-                    _clientes[i].RA = cliente.RA;
-                }
-            }
+            _context.Usuarios.Add(usuario);
+            _context.SaveChanges();
+        }
+
+        public void Update(Usuario usuario)
+        {
+            _context.Usuarios.Update(usuario);
+            _context.SaveChanges();
         }
 
         public void Delete(int id)
         {
-            for (int i = 0; i < _clientes.Count; i++)
+            var usuario = _context.Usuarios.FirstOrDefault(x => x.Id == id);
+            if (usuario != null)
             {
-                if (_clientes[i].Id == id)
-                {
-                    _clientes.RemoveAt(i);
-                    break;
-                }
+                _context.Usuarios.Remove(usuario);
+                _context.SaveChanges();
             }
         }
     }
