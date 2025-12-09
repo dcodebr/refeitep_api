@@ -8,4 +8,8 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.20" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Refeitep.Api.Service.Pedido\Refeitep.Api.Service.Pedido.csproj" />
+    <ProjectReference Include="..\Refeitep.Api.Models\Refeitep.Api.Models.csproj" />
+  </ItemGroup>
 </Project>
